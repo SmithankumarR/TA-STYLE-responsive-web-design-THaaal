@@ -21,7 +21,7 @@
 <body>
     <!-- header -->
     <header class="navbar center">
-        <div class="container flex ">
+        <div class="container flex column justify-between">
             <div>
                 <a href="#"> <img class="brand" src="assets/media/logo.png" alt=" brand-logo"></a>
             </div>
@@ -36,8 +36,8 @@
     </header>
     <!-- hero -->
     <main>
-    <section class="container padding flex article">
-        <article class="flex-46">
+    <section class="container padding flex article wrap justify-between">
+        <article class="flex-46 flex-100 order-1">
             <h1 class="article-heading">What is lorem Ipsum?</h1>
             <p class="text-color">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo numquam pariatur error, mollitia eaque
@@ -50,27 +50,27 @@
                 consequuntur vel ratione rerum magni, officia fugit illum a repudiandae?</p>
             <button class="btn btn-primary">read more</button>
         </article>
-        <article class="lex-46">
-            <img class="flexiable-img font" src="assets/media/01.png" alt=" pencil">
+        <article class="flex-46 flex-100">
+            <img  src="assets/media/01.png" alt=" pencil">
         </article>
     </section>
     <!-- blog -->
-    <section class="container padding blog">
+    <section class="container padding blog ">
         <h2 class="align">blog</h2>
-        <div class="flex">
-            <div class="flex-30">
+        <div class="flex wrap justify-between">
+            <div class="flex-30 flex-100">
                 <img class="flexiable-img" src="assets/media/02.png" alt=" coffee">
                 <h3>why do we use it</h3>
                 <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum alias commodi repellendus ab aliquid nesciunt minus maiores ex veritatis dolore?</p>
                 <button class="btn btn-primary">read more</button>
             </div>
-            <div class="flex-30">
+            <div class="flex-30 flex-100">
                 <img class="flexiable-img" src="assets/media/03.png" alt=" typing machine">
                 <h3>why do we use it</h3>
                 <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum alias commodi repellendus ab aliquid nesciunt minus maiores ex veritatis dolore?</p>
                 <button class="btn btn-primary">read more</button>
             </div>
-            <div class="flex-30">
+            <div class="flex-30 flex-100">
                 <img class="flexiable-img" src="assets/media/04.png" alt=" coffee with workspace">
                 <h3>why do we use it</h3>
                 <p class="text-color">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum alias commodi repellendus ab aliquid nesciunt minus maiores ex veritatis dolore?</p>
@@ -79,9 +79,10 @@
         </div>
     </section>
     </main>
-    <footer class="container padding flex">
+    <footer class="container padding flex column justify-between align">
         <strong>&copy; Altcampus</strong>
-        <nav><ul class="flex justify-end align-content">
+        <nav>
+            <ul class="flex  align-content ">
             <li class="social-media-icon"><a href="#"> <i class="fa-brands fa-facebook-square"></i></a></li>
             <li   class="social-media-icon" ><a href="#"> <i class="fa-brands fa-twitter-square"></i></a></li>
         </ul></nav>
