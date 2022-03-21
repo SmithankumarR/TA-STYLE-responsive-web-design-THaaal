@@ -139,7 +139,7 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
 }
 body {
@@ -151,13 +151,13 @@ body {
   max-width: 1370px;
   width: 100%;
   margin: 0 auto;
-  padding:0  2rem ;
+  padding: 0 2rem;
 }
 /* flex{*/
 .flex {
   display: flex;
 }
-.justify-between{
+.justify-between {
   justify-content: space-between;
 }
 .flex-46 {
@@ -200,41 +200,41 @@ a {
   color: var(--bg-2);
   font-weight: 700;
 }
-.font{
-    font-size: 0;
+.font {
+  font-size: 0;
 }
-.width-full{
+.width-full {
   width: 100%;
 }
-.flexiable-img{
-    width: 100%;
-    height: 16rem;
-    object-fit: cover;
+.flexiable-img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
 }
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn{
-    display: inline-block;
-    padding: 1rem 2rem;
-    letter-spacing: 0.8px;
-    border: 0;
-    outline: 0;
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  letter-spacing: 0.8px;
+  border: 0;
+  outline: 0;
 }
-.btn-primary{
-    background-color: var(--btn);
-    color: var(--bg-2);
-     border-radius: 6px;
-     text-transform: uppercase;
-     font-size: 1.2rem;
+.btn-primary {
+  background-color: var(--btn);
+  color: var(--bg-2);
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
-.active{
-    color: var(--btn);
+.active {
+  color: var(--btn);
 }
-.padding{
-    padding: 3.4rem 0;
+.padding {
+  padding: 3.4rem 0;
 }
 /* texts */
 .text-color {
@@ -247,122 +247,122 @@ a {
   text-align: center;
 }
 /* navogation bar */
-.navbar{
-    background-color: var(--secondary);
-    padding: 1rem ;
+.navbar {
+  background-color: var(--secondary);
+  padding: 1rem;
 }
-.navbar a:hover{
+.navbar a:hover {
   color: var(--btn);
 }
 .nav-menu li {
   margin-left: 20px;
   font-size: 1.2rem;
-
 }
 /* article  */
-.article{
-    background-color: var(--bg-1);
-    padding: 2.6rem;
+.article {
+  background-color: var(--bg-1);
+  padding: 2.6rem;
 }
-.article-heading{
-    font-size: 2.6rem;
-    color: var(--heading);
-
+.article-heading {
+  font-size: 2.6rem;
+  color: var(--heading);
 }
-.article img{
+.article img {
   width: 100%;
 }
 /* blog */
-.blog{
-    background-color: var(--bg-2);
-
+.blog {
+  background-color: var(--bg-2);
 }
-.blog h2{
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+.blog h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
 }
-.blog h3{
-    font-size: 2rem;
-    margin: 1rem 0;
+.blog h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 /* footer */
-footer{
- background-color:var(--secondary) ;
+.footer {
+  background-color: var(--secondary);
 }
-footer nav{
- padding: 0 4.8rem;
-
+.footer nav {
+  padding: 0 4.8rem;
 }
-footer strong{
-    font-size: 2rem;
-    color: var(--bg-2);
-    margin-left: 2rem;
+.footer strong {
+  font-size: 2rem;
+  color: var(--bg-2);
+  margin-left: 2rem;
 }
-.social-media-icon i{
-    font-size: 2.5rem;
-    color:#bdc5db; ;
-    margin-left: 2.75rem;
-    border-radius: 18px;
+.social-media-icon i {
+  font-size: 2.5rem;
+  color: #bdc5db;
+  margin-left: 2.75rem;
+  border-radius: 18px;
 }
-@media screen and (max-width:1260px) {
-  .container{
+/* media quiers */
+@media screen and (max-width: 1260px) {
+  .container {
     max-width: 1160px;
   }
-  
 }
-@media screen and (max-width:960px) {
-  .container{
+@media screen and (max-width: 960px) {
+  .container {
     max-width: 960px;
   }
-  
 }
-  
-  
+
 /* responsive */
-@media screen and (max-width:768px){
-  .container{
-    max-width:760px ;
-  }
-  html{
+@media screen and (max-width: 768px) {
+  html {
     font-size: 10px;
+  }
+  .container {
+    max-width: 760px;
+    padding: 0 2rem;
   }
   .flex-100 {
     flex: 0 1 100%;
     margin: 2rem 0;
   }
-  .wrap{
-  flex-wrap: wrap;
+  .wrap {
+    flex-wrap: wrap;
   }
-  .order-1{
+  .order-1 {
     order: 1;
   }
-  .column{
+  .column {
     flex-direction: column;
   }
   .navbar{
-    margin: 2rem 0;
-    display: block;
-
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
-  .brand{
-    margin-bottom: 2rem;
+  .nav-menu{
+    display: flex;
+    justify-content: center;
   }
   .nav-menu li{
     margin:0 1.5rem;
   }
-  .blog{
-    padding: 0 2.4rem;
+  .brand {
+    margin-bottom: 2rem;
   }
-  footer a{
-    margin:2rem 1.2rem ;
-    display: inline-block;
+  .footer{
+    padding: 1rem 0;
+  }
+  .footer a{
+    display:inline-block;
+    margin: 2rem 1.2rem 0 1.2rem;
   }
 }
-@media screen and (max-width:560px) {
-  .container{
+@media screen and (max-width: 560px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
     max-width: 560px;
   }
-  
 }
-  
