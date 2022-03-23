@@ -163,6 +163,9 @@ main {
 .flex-20 {
   flex: 0 1 20%;
 }
+.flex-25{
+  flex: 0 1 25%;
+}
 .flex-46 {
   flex: 0 1 46%;
 }
@@ -272,13 +275,12 @@ p {
 /* navigation bar */
 .navbar {
   padding: 2rem 0;
-  background: linear-gradient(
-      rgba(77, 101, 221, 0.616),
-      rgba(8, 42, 214, 0.746)
+  background: linear-gradient( to top,
+      rgba(122, 27, 230, 0.616),  rgba(20, 66, 216, 0.884)
     ),
     url(../media/banner.png) no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
 }
 .brand{
   font-size: 3rem;
@@ -295,7 +297,7 @@ p {
 .nav-menu .btn {
   margin-left: 2.4rem;
 }
-#toogle , .bars{
+#toggle, .bars{
   display: none;
 }
 /* hero */
@@ -305,9 +307,10 @@ p {
   left: 0;
   right: 0;
   color: var(--secondary);
+  height: 100vh;
 }
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-top: 12rem;
 }
 .hero strong {
@@ -341,37 +344,46 @@ p {
 /* about conetent */
 .about-content {
   background-color: var(--bg-1);
-  padding: 1rem 0;
+  padding: 4rem;
 }
 .about-content h2 {
   text-align: center;
   font-size: 2.4rem;
-  margin-top: 2rem;
+  margin: 1.6rem 0;
 }
-.about-content h3 {
+.ac-box h3 {
   font-size: 2rem;
   text-align: left;
+  margin:1rem 0;
 }
-.about-content p {
+.ac-box p {
   text-align: left;
   font-size: 1.4rem;
 }
-.border {
-  border: 2px dashed var(--primary);
+.ac-box{
+  outline: 2px dashed var(--primary);
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
 }
-.col {
-  margin-top: 4rem;
-}
-.col-1-1 {
-  margin-left: 2rem;
+.num{
+  background-color: var(--bg-1);
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  position:absolute;
+  top: -2rem;
+  left: 2rem;
 }
 /* schedule  */
 .schedule {
   background-color: var(--secondary);
 }
 .schedule img {
-  width: 16rem;
   border-radius: 10px;
+  margin-left: 4rem;
+  width: 100%;
 }
 .schedule h2 {
   font-size: 2.8rem;
@@ -379,11 +391,14 @@ p {
   text-align: center;
   margin: 3rem 0;
 }
-.schedule h3 {
+.schedule-content{
+  margin-left: 12rem;
+}
+.schedule-content h3 {
   font-size: 2.2rem;
   text-transform: capitalize;
 }
-.schedule p {
+.schedule-content p {
   font-size: 1.5rem;
 }
 .schedule .btn {
@@ -396,7 +411,7 @@ p {
   background-color: var(--primary);
   width: 8rem;
   font-size: 1.6rem;
-  height: 13vh;
+  height: 14vh;
   color: var(--secondary);
   font-weight: 800;
   line-height: 6vh;
@@ -410,16 +425,33 @@ p {
   color: var(--primary);
   font-weight: 800;
   font-size: 1.6rem;
-  height: 13vh;
+  height: 14vh;
   line-height: 6vh;
   text-align: center;
   border-radius: 50%;
 }
-
+.dotted-line{
+  transform: rotate(90deg);
+  width: 10rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 3.6rem 0 0 0;
+  padding-top: 1rem;
+}
+.dotted-line-invalid{
+  transform: rotate(90deg);
+  visibility: hidden;
+  width: 10rem;
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin: 3.6rem 0 0 0;
+  padding-top: 1rem;
+}
 /* program */
 .program {
   background-color: var(--bg-1);
   padding: 6rem 0;
+  margin: 0 4rem;
 }
 .program h2 {
   font-size: 2rem;
@@ -430,23 +462,30 @@ p {
   letter-spacing: -1;
   text-transform: capitalize;
 }
+.select-pg{
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem 0;
+  bottom: 3rem;
+
+}
 /* event-cover */
 .iframe-container{
   height: 0;
-  padding-bottom: 56.25%;
+  padding-bottom: 56.25%;;
   width: 100%;
   position: relative;
 }
 .event-cover iframe{
   border-radius: 12px;
   position: absolute;
-  top: 0;
-  right: 0 ;
-  left:0;
-  bottom:0;
-  width: 100%;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
-
+  width: 100%;
 }
 /* news */
 .news {
@@ -472,7 +511,7 @@ p {
   color: var(--primary);
 }
 .footer {
-  background-color: rgba(20, 50, 150, 0.904);
+  background-color: rgba(37, 50, 150, 0.925);
   padding: 2.8rem 0;
 }
 .footer img {
@@ -481,6 +520,7 @@ p {
 .footer h2 {
   font-size: 1.4rem;
   margin-right: 3rem;
+  margin-bottom: 1rem;
   color: var(--secondary);
 }
 .footer i {
@@ -490,7 +530,7 @@ p {
   color: var(--bg-1);
 }
 .footer-2 {
-  background-color: rgba(37, 57, 123, 0.925);
+  background-color: rgba(31, 52, 124, 0.925);
   padding: 1rem 0;
 }
 .footer-2 small {
@@ -516,7 +556,6 @@ p {
 @media screen and (max-width: 768px) {
   html {
     font-size: 12px;
-  
   }
   /* general */
   .container {
@@ -535,47 +574,39 @@ p {
   .sm-wrap{
     flex-wrap: wrap;
   }
+  .sm-flex{
+    display: flex;
+  }
+  
   .order-1{
     order: 1;
   }
-  /* navigation bar  */
-  .brand , .bars{
-    position: fixed;
-    top: 1.5rem;
-    z-index: 99;
-
+  .sm-text-center{
+    text-align: center;
   }
-  .brand{
-    left: 2rem;
-
+  .sm-justify-center{
+    justify-content: center;
   }
-  .bars{
-    right: 2rem;
-    
-  }
+  /* navigation */
   .navbar{
-    background-color:rgba(0, 0, 0, 0.6);
-    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 80px;
     position: fixed;
     z-index: 99;
   }
   .nav{
     display: none;
-    position: fixed;
-    top: 0;
+    position:fixed;
+    top:0;
     right: 0;
     bottom: 0;
     left: 0;
     height: 100vh;
-    background-color: var(--heading);
+    background-color: rgba(35, 52, 123, 0.7);
     padding-top: 12rem;
     z-index: 9;
   }
-  .nav-list{
-    margin: 1rem 0;
-  }
-
-  #toogle:checkbox ~ .nav{
+  #toggle:checked ~ .nav{
     display: inline-block;
   }
   .bars{
@@ -583,17 +614,80 @@ p {
     color: var(--secondary);
     display: inline-block;
   }
-/* hero */
-.hero{
-  height: auto;
-  padding: 8rem 0 6rem 0;
-}
-.hero img{
-  max-height: 600px;
-  object-fit: cover;
-  border-top-left-radius: 3rem;
-  border-bottom-right-radius: 3rem;
-}
+  .brand , .bars{
+    position: fixed;
+    top: 1.5rem;
+    z-index: 99;
+  }
+  .brand{
+    left: 2rem;
+  }
+  .bars{
+    right: 2rem;
+  }
+  .nav-list{
+    margin: 1rem 0;
+  }
+
+  /* hero */
+  .hero{
+    height: auto;
+    padding:8rem 0 6rem 0;
+  }
+  .hero img{
+    height: 500px;
+    -o-object-fit: cover;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+  }
+  /* program */
+  .program h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  .program h4 {
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .select-pg{
+    position: relative;
+    width: 100%;
+    height: 18rem;
+    padding: 1rem 0;
+    margin: 3rem 0;
+    top: 1rem;
+  }
+
+  /* news */
+  .news h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+
+  }
+  .news h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-transform: none;
+    margin: 0.5rem;
+  }
+  .news p{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  .news a {
+    color: var(--heading);
+    font-size: 1.6rem;
+    text-decoration: underline;
+  }
+  /* footer */
+  .footer a{
+    margin: 0 0.75rem;
+  }
 }
 @media screen and (max-width: 576px) {
   html {
